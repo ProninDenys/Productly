@@ -1,0 +1,505 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+header {
+    background-color: rgb(255, 255, 255); 
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1); 
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgb(255, 255, 255);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 400; 
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.menu a.active {
+    color: #000000;
+}
+
+.menu a:hover {
+    color: #e99b1c !important; 
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.auth-buttons a {
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.auth-buttons .sign-in {
+    color: #333;
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+.auth-buttons .sign-up {
+    background-color: #f6a623;
+    color: white;
+    border: none;
+}
+
+nav .menu a:hover,
+.auth-buttons .sign-in:hover,
+.auth-buttons .sign-up:hover {
+    color: #555;
+}
+
+.auth-buttons .sign-in:hover {
+    background-color: #f6f6f6;
+}
+
+.auth-buttons .sign-up:hover {
+    background-color: #f39c12;
+}
+
+@media (max-width: 768px) {
+    nav .menu {
+        display: none;
+    }
+    section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    img {
+        margin-top: 20px;
+    }
+
+    .auth-buttons {
+        flex-direction: row;
+        gap: 10px;
+    }
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+img {
+    margin-top: 20px;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px;
+}
+
+section .text-container {
+    flex: 1;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.get-started {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 50px;
+    padding: 13px 40px;
+    background-color: #f6a623;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px 0 0 0;
+    opacity: 1;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    transition: background-color 0.3s ease;
+    border-radius: 12px;
+}
+
+.get-started:hover {
+    background-color: #f39c12;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #ffffff;
+    border-top: 1px solid #e1e1e1;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    width: 100%;
+}
+
+footer .logo {
+    display: flex;
+    align-items: flex-start;
+}
+
+footer .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+footer .links {
+    display: flex;
+    gap: 100px;
+}
+
+footer .column {
+    width: 135px;
+    height: auto;
+}
+
+footer .column h4 {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+footer .column ul {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #666;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .column ul li {
+    margin-bottom: 15px;
+}
+
+footer .column ul li a {
+    font-size: 14px;
+    color: #666;
+    text-decoration: none;
+}
+
+footer .column ul li a:hover {
+    text-decoration: underline;
+}
+
+footer .subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 300px;
+}
+
+footer .subscribe h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+footer .subscribe input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    width: 200px;
+    color: #333;
+}
+
+footer .subscribe input::placeholder {
+    color: rgba(0, 0, 0, 0.1);
+}
+
+footer .subscribe button {
+    padding: 10px 20px;
+    background-color: #ff9900;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+footer .subscribe button:hover {
+    background-color: #e68a00;
+}
+
+.section {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(179.61deg, rgba(255, 229, 210, 0.629261) 0.33%, rgba(255, 244, 229, 0.0001) 99.67%);
+    border-radius: 560px; 
+}
+
+.section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 900; 
+    line-height: 43.88px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    gap: 18px; 
+}
+
+.card {
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    text-align: left;
+    background: none; 
+    box-shadow: none; 
+}
+
+.card img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+}
+
+button {
+    padding: 15px 30px;
+    background-color: #ff9900;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e68a00;
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+@media (max-width: 1024px) {
+    nav .menu {
+        display: none;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    img {
+        margin-top: 20px;
+    }
+
+    section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    .text-container h1 {
+        font-size: 24px;
+    }
+
+    .text-container .description {
+        font-size: 16px;
+    }
+
+    .get-started {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    footer .column {
+        width: auto;
+    }
+
+    footer .subscribe {
+        align-items: center;
+        width: 100%;
+    }
+
+    footer .subscribe input {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    footer .subscribe button {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .get-started {
+        width: 140px; /* Make the button smaller */
+        height: 40px; /* Adjust height */
+        padding: 10px 20px; /* Adjust padding */
+        font-size: 14px; /* Adjust font size */
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 10px 20px;
+    }
+
+    .auth-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .text-container h1 {
+        font-size: 20px;
+    }
+
+    .text-container .description {
+        font-size: 14px;
+    }
+
+    .get-started {
+        padding: 8px 16px;
+        font-size: 12px;
+        line-height: 16px;
+        width: 120px; /* Make the button even smaller for mobile */
+        height: 35px; /* Adjust height for mobile */
+    }
+
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    footer .column {
+        width: auto;
+    }
+
+    footer .subscribe {
+        align-items: center;
+        width: 100%;
+    }
+
+    footer .subscribe input {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    footer .subscribe button {
+        width: 100%;
+        max-width: 300px;
+    }
+}
